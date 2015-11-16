@@ -13,6 +13,7 @@ angular.module('designadish', [])
 		//	Save search text for when filter criteria are selected
 		if (!$scope.currentSearchText) {
 			$scope.currentSearchText = $scope.formData;
+			$scope.currentSearchText.text = $scope.currentSearchText.text.toLowerCase();
 		}
 		
 		//	$event is only passed in when filter criteria are selected
